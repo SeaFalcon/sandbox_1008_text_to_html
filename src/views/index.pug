@@ -1,0 +1,7 @@
+include layouts/main
+
+block content
+    h1 TXT2HTML!
+    form(action="/read", method="post", enctype="multipart/form-data")
+      input(type="file", name="text")
+      input(type="submit", value="Convert!")
